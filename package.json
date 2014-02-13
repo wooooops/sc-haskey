@@ -1,6 +1,6 @@
 {
   "name": "sc-haskey",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A utility that checks objects for deep keys and validates their type",
   "main": "index.js",
   "scripts": {
