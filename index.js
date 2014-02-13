@@ -7,7 +7,7 @@ function hasKey( object, keys, keyType ) {
   keyType = type( keyType ) === "string" ? keyType : "";
 
   var key = keys.length > 0 ? keys.shift() : "",
-    keyExists = has.call( object, key ),
+    keyExists = has.call( object, key ) || object[ key ] !== void 0,
     keyValue = keyExists ? object[ key ] : undefined,
     keyTypeIsCorrect = type( keyValue ) === keyType;
 
